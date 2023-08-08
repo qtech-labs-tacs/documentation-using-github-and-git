@@ -1,0 +1,11 @@
+=======================
+Day-01 
+=======================
+
+
+Maven Commands:
+1) mvn clean 
+2) mvn build 
+3) mvn install
+4) mvn clean install
+5) mvn clean install -DskipTests
