@@ -1,0 +1,44 @@
+==========================================
+Day - 02
+==========================================
+
+Docker Commands:
+1) docker version
+2) docker image ls
+3) docker image pull <image-name>:<image-tag>
+4) docker container create --name=<name> <image-name>:<image-tag>
+5) docker container start <container-name/id>
+6) docker container stop <container-name/id>
+7) docker container run --name=<name> -p <host-port>:<docker-container-port> -d <image-name>:<image-tag>
+8) docker container ls 
+9) docker container ls -a
+10) docker image build -t <image-name>:<image-tag>
+
+
+==========================================
+Docker Object:
+==========================================
+
+1) Image
+2) Container
+
+
+===========================================
+How to create our custom images in Docker:
+===========================================
+
+1) Create Dockerfile
+2) Write code inside our newly created Dockerfile for e.g:
+   FROM openjdk:8
+   WORKDIR /home
+   COPY target/course-management-1.0.jar .
+   CMD ["java", "-jar" , "course-management-1.0.jar"]  
+3) use docker build command to create the image, refer command no 10 above.
+
+
+
+
+
+
+
+
